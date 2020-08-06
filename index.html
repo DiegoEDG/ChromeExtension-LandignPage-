@@ -9,9 +9,30 @@
   <title>Frontend Mentor | Bookmark landing page</title>
 </head>
 <body>
-  <header>
+  <div class="menu hide" id="menu">
+    <div class="button-close">
+      <a href="#" id="button-close">
+        <img src="/images/icon-close.svg" alt="">
+      </a>
+    </div>
+    <div class="items">
+      <hr>
+      <h4>FEATURES</h4>
+      <hr>
+      <h4>PRICING</h4>
+      <hr>
+      <h4>CONTACT</h4>
+      <hr>
+      <a href="">LOGIN</a>
+    </div>
+    <div class="social-media">
+      <a href="#"><img src="/images/icon-facebook.svg" alt=""></a>
+      <a href="#"><img src="/images/icon-twitter.svg" alt=""></a>
+    </div>
+  </div>
+  <header id="header">
     <img class="logo" src="/images/logo-bookmark.svg" alt="">
-    <button class="button-menu"><a href="#">
+    <button class="button-menu" id="button-menu"><a href="#">
       <img src="/images/icon-hamburger.svg" alt="">
     </a></button>
   </header>
@@ -135,9 +156,9 @@
     </div>
     <div class="faqs-question">
       <h4 class="question">What is Bookmark?</h4>
-      <button class="question-button"><img src="/images/icon-arrow.svg" alt=""></button>
+      <button class="question-button" id="question-button-1"><img src="/images/icon-arrow.svg" alt=""></button>
     </div>
-    <div class="answer">
+    <div class="answer hide" id="answer-1">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
         justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
@@ -146,9 +167,9 @@
     <hr>
     <div class="faqs-question">
       <h4 class="question">How can I request a new browser?</h4>
-      <button class="question-button"><img src="/images/icon-arrow.svg" alt=""></button>
+      <button class="question-button" id="question-button-2"><img src="/images/icon-arrow.svg" alt=""></button>
     </div>
-    <div class="answer">
+    <div class="answer hide" id="answer-2">
       <p>
         Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
         Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
@@ -159,9 +180,9 @@
     <hr>
     <div class="faqs-question">
       <h4 class="question">Is there a mobile app?</h4>
-      <button class="question-button"><img src="/images/icon-arrow.svg" alt=""></button>
+      <button class="question-button" id="question-button-3"><img src="/images/icon-arrow.svg" alt=""></button>
     </div>
-    <div class="answer">
+    <div class="answer hide" id="answer-3">
       <p>
         Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
         urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
@@ -171,9 +192,9 @@
     <hr>
     <div class="faqs-question">
       <h4 class="question">What about other Chromium browsers?</h4>
-      <button class="question-button"><img src="/images/icon-arrow.svg" alt=""></button>
+      <button class="question-button" id="question-button-4"><img src="/images/icon-arrow.svg" alt=""></button>
     </div>
-    <div class="answer">
+    <div class="answer hide" id="answer-4">
       <p>
         Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
         vitae neque eget nisl gravida pellentesque non ut velit.
@@ -203,5 +224,6 @@
       <img src="/images/icon-twitter.svg" alt="">
     </div>
   </footer>
+  <script src="/app.js"></script>
 </body>
 </html>
