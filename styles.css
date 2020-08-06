@@ -21,6 +21,30 @@ header{
   background: transparent;
   border: none;
 }
+.menu-button,.login-button{
+  text-decoration: none;
+  margin: auto 10px;
+}
+.menu-button{
+  color: black;
+}
+.menu-button:hover{
+  color: var(--red);
+}
+.menu-button:active{
+  color: var(--red);
+}
+.login-button{
+  background: var(--red);
+  color: white;
+  padding: 7px 30px;
+  border-radius: 7px;
+}
+.login-button:hover{
+  color: var(--red);
+  border: 1px solid var(--red);
+  background: white;
+}
 .container{
   margin: 10px auto;
   width: 365px;
@@ -78,6 +102,11 @@ header{
   margin-left: auto;
   margin-right: auto;
 }
+.main-button:hover{
+  background: white;
+  color: var(--blue);
+  border: 1px solid var(--blue);
+}
 .secondary{
   color: gray;
   background-color: white;
@@ -88,6 +117,10 @@ header{
 }
 .main-button a{
   color:white;
+  text-decoration: none;
+}
+.main-button a:hover{
+  color:var(--blue);
   text-decoration: none;
 }
 .features{
@@ -125,6 +158,9 @@ hr{
   background-color: transparent;
   border: none;
 }
+.features-button:hover{
+  color: var(--red);
+}
 .features-button:active{
   background-color: transparent;
   border: none;
@@ -139,6 +175,8 @@ hr{
 .feature{
   max-width: 100%;
   margin-top: 30px;
+  display: flex;
+  flex-direction: column;
 }
 .feature-img{
   width: 100%;
@@ -212,6 +250,11 @@ text-align: center;
   font-size: 16px;
   border-radius: 5px;
 }
+.download-button:hover{
+  background: white;
+  border: 1px solid var(--blue);
+  color: var(--blue);
+}
 .faqs{
   width: 365px;
   margin: 10px auto;
@@ -232,6 +275,9 @@ text-align: center;
   flex-direction: row;
   align-content: center;
   justify-content: space-between;
+}
+.faqs-question:hover{
+  color: var(--red);
 }
 .question{
   margin-left: 10px;
@@ -394,4 +440,59 @@ footer{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+@media screen and (min-width:768px){
+  .container,.features,.download{
+    width: 1000px;
+    margin: 10px auto;
+  }
+  .button-menu{
+    display: none;
+  }
+  .container{
+    flex-direction: row-reverse;
+  }
+  .features-texts{
+    max-width: 60%;
+  }
+  .features-buttons{
+    flex-direction: row;
+  }
+  .features-buttons hr{
+    display: none;
+  }
+  .feature{
+    flex-direction: row;
+  }
+  .download-texts{
+    max-width: 60%;
+    margin-bottom: 50px;
+  }
+  .cards{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    max-height: 600px;
+  }
+  .uno{
+    margin-top: 0px;
+    margin-bottom: 170px;
+  }
+  .dos{
+    position: relative ;
+    margin-top: 20px;
+    margin-bottom: 150px;
+  }
+  .tres{
+    margin-top: 40px;
+    margin-bottom: 130px;
+  }
+  .faqs{
+    margin-top: -100px;
+  }
+}
+@media screen and (max-width:768px){
+  .menu-button,.login-button{
+    display: none;
+  }
 }

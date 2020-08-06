@@ -30,8 +30,14 @@
       <a href="#"><img src="/images/icon-twitter.svg" alt=""></a>
     </div>
   </div>
-  <header id="header">
-    <img class="logo" src="/images/logo-bookmark.svg" alt="">
+  <header>
+    <img id="logo" class="logo" src="/images/logo-bookmark.svg" alt="">
+    <div class="menu-buttons">
+      <a class="menu-button" href="">FEATURES</a>
+      <a class="menu-button" href="">PRICING</a>
+      <a class="menu-button" href="">CONTACT</a>
+      <a class="login-button" href="">LOG IN</a>
+    </div>
     <button class="button-menu" id="button-menu"><a href="#">
       <img src="/images/icon-hamburger.svg" alt="">
     </a></button>
@@ -114,38 +120,40 @@
       got a favourite you’d like us to prioritize.
       </p>
     </div>
-    <div class="download-card">
-      <div class="download-img">
-        <img src="/images/logo-chrome.svg" alt="">
+    <div class="cards">
+      <div class="download-card uno">
+        <div class="download-img">
+          <img src="/images/logo-chrome.svg" alt="">
+        </div>
+        <div class="download-card-texts">
+          <h4>Add to Chrome</h4>
+          <p>Minimum version 62</p>
+        </div>
+        <hr class="dotted-line">
+        <a href=""><button class="download-button">Add & Install Extension</button></a>
       </div>
-      <div class="download-card-texts">
-        <h4>Add to Chrome</h4>
-        <p>Minimum version 62</p>
+      <div class="download-card dos">
+        <div class="download-img">
+          <img src="/images/logo-firefox.svg" alt="">
+        </div>
+        <div class="download-card-texts">
+          <h4>Add to Firefox</h4>
+          <p>Minimum version 55</p>
+        </div>
+        <hr class="dotted-line">
+        <a href=""><button class="download-button">Add & Install Extension</button></a>
       </div>
-      <hr class="dotted-line">
-      <a href=""><button class="download-button">Add & Install Extension</button></a>
-    </div>
-    <div class="download-card">
-      <div class="download-img">
-        <img src="/images/logo-firefox.svg" alt="">
+      <div class="download-card tres">
+        <div class="download-img">
+          <img src="/images/logo-opera.svg" alt="">
+        </div>
+        <div class="download-card-texts">
+          <h4>Add to Opera</h4>
+          <p>Minimum version 46</p>
+        </div>
+        <hr class="dotted-line">
+        <a href=""><button class="download-button">Add & Install Extension</button></a>
       </div>
-      <div class="download-card-texts">
-        <h4>Add to Firefox</h4>
-        <p>Minimum version 55</p>
-      </div>
-      <hr class="dotted-line">
-      <a href=""><button class="download-button">Add & Install Extension</button></a>
-    </div>
-    <div class="download-card">
-      <div class="download-img">
-        <img src="/images/logo-opera.svg" alt="">
-      </div>
-      <div class="download-card-texts">
-        <h4>Add to Opera</h4>
-        <p>Minimum version 46</p>
-      </div>
-      <hr class="dotted-line">
-      <a href=""><button class="download-button">Add & Install Extension</button></a>
     </div>
   </section>
   <section class="faqs">
@@ -209,7 +217,7 @@
       <h4>Stay up-to-date with what we’re doing</h4>
     </div>
     <form  class="contact-form" action="#">
-      <input class="form-input" type="text" placeholder="Enter your email address">
+      <input class="form-input" type="text" placeholder="Enter your email address" required>
       <input class="form-button" type="button" value="Contact Us">
     </form>
   </section>
